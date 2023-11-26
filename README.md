@@ -4,12 +4,11 @@
 
 # Trendify - Kodeco Capstone Project
 
-Trendify is an innovative iOS application crafted using **SwiftUI**, designed to offer a seamless and visually appealing shopping experience for fashion-forward men. Leveraging the robust API from the renowned **ASOS** website, Trendify brings an extensive collection of trendy clothing, shoes, and accessories right to the fingertips of its users. The app aims to bridge the gap between fashion enthusiasts and the latest trends by combining the convenience of mobile shopping with ASOS's diverse range of men's fashion products.
-## Screenshots
-
 <p align="center">
     <img src="Screenshots/main.png" alt="drawing" width="500"/>
 </p>
+
+Trendify is an innovative iOS application crafted using **SwiftUI**, designed to offer a seamless and visually appealing shopping experience for fashion-forward men. Leveraging the robust API from the renowned **ASOS** website, Trendify brings an extensive collection of trendy clothing, shoes, and accessories right to the fingertips of its users. The app aims to bridge the gap between fashion enthusiasts and the latest trends by combining the convenience of mobile shopping with ASOS's diverse range of men's fashion products.
 
 ## Video Demo
 

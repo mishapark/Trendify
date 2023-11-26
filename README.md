@@ -88,7 +88,7 @@ Free version allows 500 calls
 
 ## Running Tests
 
-#### Project uses XCTest and includes UnitTests and UITests
+#### Project uses XCTest and includes UnitTests and UITests (83% coverage)
 
 - To run all the tests press `cmd + U`
 - Note: Some tests may fail due to network issues (slow or no internet)

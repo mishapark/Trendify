@@ -84,7 +84,7 @@ To run this project, you will need to create `ASOS-Info.plist` wtih the variable
 ## API Reference
 
 #### API Endpoints can be found here: https://rapidapi.com/apidojo/api/asos2
-
+Free version allows 500 calls
 
 ## Running Tests
 

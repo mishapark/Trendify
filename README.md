@@ -51,6 +51,7 @@ To run this project, you will need to create `ASOS-Info.plist` wtih the variable
 - **Error Handling**
     - Throwing custom errors during API call and displaying them in UI
 - **Animations**
+    - Done with `withAnimation`
 - **Animated Splash Screen**
 - **Onboarding Screen**
     - Consists of 3 screens created with TabView

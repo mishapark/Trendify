@@ -11,24 +11,49 @@ struct ProductDescriptionView: View {
   let text: String
 
   @State var isExpanded = false
+  @State var convertedText: String = ""
 
   var body: some View {
-    VStack(alignment: .trailing) {
-      Text(text)
-        .foregroundStyle(Colors.General.AccentColor)
-        .lineLimit(isExpanded ? nil : 2)
-        .font(.custom(OrbitronFonts.regular, size: Constants.Text.text))
+    VStack(alignment: .leading) {
+      RegularText(convertedText, color: Colors.General.AccentColor)
+        .lineLimit(isExpanded ? nil : 1)
         .padding(.bottom, 3)
-      Button {
-        withAnimation {
-          isExpanded.toggle()
+      HStack {
+        Spacer()
+        Button {
+          withAnimation {
+            isExpanded.toggle()
+          }
+        } label: {
+          Text(isExpanded ? "Read less" : "Read more")
+            .foregroundStyle(Colors.General.DarkTextColor)
+            .font(.custom(OrbitronFonts.bold, size: Constants.Text.text))
         }
-      } label: {
-        Text(isExpanded ? "Read less" : "Read more")
-          .foregroundStyle(Colors.General.DarkTextColor)
-          .font(.custom(OrbitronFonts.bold, size: Constants.Text.text))
       }
+      .frame(maxWidth: .infinity)
     }
+    .onAppear {
+      convertedText = convertHTMLToPlainText(text)
+    }
+  }
+}
+
+private func convertHTMLToPlainText(_ text: String) -> String {
+  guard let data = text.data(using: .utf8) else {
+    return "Failed to load the text"
+  }
+
+  let options: [NSAttributedString.DocumentReadingOptionKey: Any] = [
+    .documentType: NSAttributedString.DocumentType.html,
+    .characterEncoding: String.Encoding.utf8.rawValue
+  ]
+
+  do {
+    let attributedString = try NSAttributedString(data: data, options: options, documentAttributes: nil)
+    return attributedString.string
+  } catch {
+    print("Something broke: (error)")
+    return "Failed to load the text"
   }
 }
 

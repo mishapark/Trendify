@@ -1,14 +1,22 @@
-
-![Logo](https://github.com/mishapark/Trendify/blob/main/Trendify/Common/Resources/Assets.xcassets/AppIcon.appiconset/T%20(2).png)
-
+<p align="center">
+    <img src="Screenshots/icon.png" alt="drawing" width="200"/>
+</p>
 
 # Trendify - Kodeco Capstone Project
 
+<p align="center">
+    <img src="Screenshots/main.png" alt="drawing" width="500"/>
+</p>
+
 Trendify is an innovative iOS application crafted using **SwiftUI**, designed to offer a seamless and visually appealing shopping experience for fashion-forward men. Leveraging the robust API from the renowned **ASOS** website, Trendify brings an extensive collection of trendy clothing, shoes, and accessories right to the fingertips of its users. The app aims to bridge the gap between fashion enthusiasts and the latest trends by combining the convenience of mobile shopping with ASOS's diverse range of men's fashion products.
-## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+## Video Demo
 
+<p align="center">
+    <a href="https://youtu.be/IiMqSwgzhx8">
+      <img src="https://img.youtube.com/vi/IiMqSwgzhx8/maxresdefault.jpg" alt="Watch the video" style="width: 400px;">
+    </a>
+</p>
 
 ## Environment Variables
 
@@ -27,7 +35,6 @@ To run this project, you will need to create `ASOS-Info.plist` wtih the variable
 | Accent Color     | ![#112D4E](https://via.placeholder.com/10/112D4E?text=+) #112D4E | ![#F05454](https://via.placeholder.com/10/F05454?text=+) #F05454 |
 | Light Accent Color     | ![#3F72AF](https://via.placeholder.com/10/3F72AF?text=+) #3F72AF | ![#222831](https://via.placeholder.com/10/222831?text=+) #222831 |
 | Lightest Accent Color     | ![#FFF1DC](https://via.placeholder.com/10/FFF1DC?text=+) #FFF1DC | ![#7690AB](https://via.placeholder.com/10/7690AB?text=+) #7690AB |
-    
 
 ## Features
 
@@ -44,6 +51,7 @@ To run this project, you will need to create `ASOS-Info.plist` wtih the variable
 - **Error Handling**
     - Throwing custom errors during API call and displaying them in UI
 - **Animations**
+    - Done with `withAnimation`
 - **Animated Splash Screen**
 - **Onboarding Screen**
     - Consists of 3 screens created with TabView
@@ -77,11 +85,11 @@ To run this project, you will need to create `ASOS-Info.plist` wtih the variable
 ## API Reference
 
 #### API Endpoints can be found here: https://rapidapi.com/apidojo/api/asos2
-
+Free version allows 500 calls
 
 ## Running Tests
 
-#### Project uses XCTest and includes UnitTests and UITests
+#### Project uses XCTest and includes UnitTests and UITests (83% coverage)
 
 - To run all the tests press `cmd + U`
 - Note: Some tests may fail due to network issues (slow or no internet)
